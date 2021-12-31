@@ -1,0 +1,38 @@
+Operating Systems Zoo(종류)
+
+​
+
+① Mainframe OS
+
+1) Batch : User와의 interacton X, job들을 그냥 모아서 처리한다.
+
+2) Transaction processing : 일의 unit이 작다 
+
+ex) bank의 ATM machine, airline reservations
+
+3) timesharing : 시분할
+
+interaction을 제공함 O
+
+CPU가 기간을 쪼개서 각 사용자들의 job을 처리해줌
+
+​
+
+②Hard real - time system VS Soft real - time system
+
+hard real - time system : deadline 안에 일어나야 함
+
+soft real - time system : deadline을 지키지 않아도 됨
+
+​
+
+<Batch와 Timesharing의 차이점>
+
+
+③ 트랩과 인터럽트의 차이점
+
+인터럽트 : 하드웨어적 흐름의 변화, 비동기적
+
+트랩 : 소프트웨어적 흐르므이 변화, 소프트웨어 인터럽트, 동기적
+
+ex) 예외와 시스템콜 - 프로그램 내부에서 일어나는 에러이다
