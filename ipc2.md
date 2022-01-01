@@ -53,7 +53,7 @@ p0은 임계구역에 존재하지 않는 p1에 의해 블록된다.
 또는 p0은 critical region 밖에 있으면서 p1을 막고 있음
 
 ​
-
+```
 //p0
 while(TRUE){
     while(turn!=0)
@@ -69,6 +69,7 @@ while(TRUE){
     turn=0;
     noncritical_region();
 }
+```
 4. Peterson's Solution
 
 두 프로세스가 거의 동시에 enter_region을 호출
@@ -76,7 +77,7 @@ while(TRUE){
 turn, interested
 
 먼저 온 p0이 먼저 critical region에 들어간다. 프로세스 0이 임계구역을 나올 때까지 프로세스1은 루프를 돌면서 임계구역에 진입하지 못한다.
-
+```
 #define FALSE 0
 #define TRUE 1
 #define N 2
@@ -101,6 +102,7 @@ l_r(0);
 e_r(1);
 c_r;
 l_r(1);
+```
 //공유 변수 : turn, interested[2]
 ※참고  : strict alternation, peterson의 방법 :  순수하게 소프트웨어적인 방법이다.
 
